@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sora Kang",
-  description: "A Personal Website to Explore",
+  title: "Sora's Blog",
+  description: "A Personal Blog to Explore",
 };
 
 export default function RootLayout({ children }) {
