@@ -1,20 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    if (process.env.NODE_ENV !== 'production') {
-      return [];
-    };
-    
+  async headers() {
+    // if (process.env.NODE_ENV !== 'production') {
+    //   return [];
+    // };
+
     return [
       {
-        source: '/blog',
-        destination: 'https://blog.sorakang.io',
-        permanent: true,
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
       },
     ];
   },
 };
-
-
 
 export default nextConfig;
