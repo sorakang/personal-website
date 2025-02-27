@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/sorakang/Documents/Documents%20-%20Sora%E2%80%99s%20MacBook%20Air/Code/personal-website/personal-website/apps/frontend/blog/apps/frontend/blog/app/page.jsx"],"sourcesContent":["'use client';\nimport React, { useEffect } from 'react';\nimport { useTitle } from '../../packages/components/TitleContext.jsx';\n\nexport default function Blog() {\n  const { setTitle } = useTitle();\n  useEffect(() => {\n    setTitle('My Blog');\n  }, []);\n\n  return (\n    <div>\n      <p>Under Construction</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AACA;AAFA;;;;AAIe,SAAS;IACtB,MAAM,EAAE,QAAQ,EAAE,GAAG,CAAA,GAAA,2JAAA,CAAA,WAAQ,AAAD;IAC5B,CAAA,GAAA,qMAAA,CAAA,YAAS,AAAD,EAAE;QACR,SAAS;IACX,GAAG,EAAE;IAEL,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBAAE;;;;;;;;;;;AAGT"}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

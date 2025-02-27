@@ -1,0 +1,9 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "source venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8000 --reload",
+    "start": "source venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8000"
+  },
+  "packageManager": "npm@7.20.0"
+}

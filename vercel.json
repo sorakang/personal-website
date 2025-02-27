@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "main": {
+      "rootDirectory": "apps/frontend/src/app",
+      "alias": ["sorakang.io", "www.sorakang.io"]
+    },
+    "blog": {
+      "rootDirectory": "apps/frontend/src/blog",
+      "alias": ["blog.sorakang.io"]
+    }
+  }
+}
