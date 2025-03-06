@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/sorakang/Documents/Documents%20-%20Sora%E2%80%99s%20MacBook%20Air/Code/personal-website/personal-website/apps/frontend/main/apps/frontend/main/app/resume/page.jsx"],"sourcesContent":["'use client';\nimport React, { useEffect } from 'react';\nimport { useTitle } from '../../../packages/components/TitleContext';\n\nexport default function Resume() {\n  const { setTitle } = useTitle();\n  useEffect(() => {\n    setTitle('Resume');\n  }, []);\n\n  return (\n    <div>\n      <p>Under Construction</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AACA;;;AAFA;;;AAIe,SAAS;;IACtB,MAAM,EAAE,QAAQ,EAAE,GAAG,CAAA,GAAA,8JAAA,CAAA,WAAQ,AAAD;IAC5B,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;4BAAE;YACR,SAAS;QACX;2BAAG,EAAE;IAEL,qBACE,6LAAC;kBACC,cAAA,6LAAC;sBAAE;;;;;;;;;;;AAGT;GAXwB;;QACD,8JAAA,CAAA,WAAQ;;;KADP"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

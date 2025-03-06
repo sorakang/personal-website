@@ -2,18 +2,25 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { useTitle } from '../../packages/components/TitleContext.jsx';
+// import { getData } from '../utils/api.js';
 
 export default function Home() {
   const { setTitle } = useTitle();
   useEffect(() => {
     setTitle('');
   }, []);
-  const [message, setMessage] = useState("");
+
+  const [data, setData] = useState("");
+
   useEffect(() => {
-    fetch("http://localhost:8000")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/`)
       .then((res) => res.json())
-      .then((data) => setMessage(data.message));
+      .then((data) => setData(data))
+      .catch((err) => console.error("Error fetching data:", err));
   }, []);
+
+  console.log('data', data);
+
   return (
     <div>
       <div className="construction">
@@ -27,7 +34,7 @@ export default function Home() {
         <p className="title">Under Construction</p>
       </div>
       <p>Please come back soon!</p>
-      <p>API Message: {message}</p>
+      <p>API Message: {JSON.stringify(data)}</p>
     </div>
   );
 }

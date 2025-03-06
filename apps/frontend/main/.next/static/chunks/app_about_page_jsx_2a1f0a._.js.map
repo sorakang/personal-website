@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/sorakang/Documents/Documents%20-%20Sora%E2%80%99s%20MacBook%20Air/Code/personal-website/personal-website/apps/frontend/main/apps/frontend/main/app/about/page.jsx"],"sourcesContent":["'use client';\nimport React, { useEffect } from 'react';\nimport { useTitle } from '../../../packages/components/TitleContext';\n\nexport default function About() {\n  const { setTitle } = useTitle();\n  useEffect(() => {\n    setTitle('About Me');\n  }, []);\n\n  return (\n    <div>\n      <p>Under Construction</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AACA;;;AAFA;;;AAIe,SAAS;;IACtB,MAAM,EAAE,QAAQ,EAAE,GAAG,CAAA,GAAA,8JAAA,CAAA,WAAQ,AAAD;IAC5B,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;2BAAE;YACR,SAAS;QACX;0BAAG,EAAE;IAEL,qBACE,6LAAC;kBACC,cAAA,6LAAC;sBAAE;;;;;;;;;;;AAGT;GAXwB;;QACD,8JAAA,CAAA,WAAQ;;;KADP"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 @app.get("/")
-async def root():
+def root():
   return {"message": "FastAPI is working"}
 
 app.add_middleware(

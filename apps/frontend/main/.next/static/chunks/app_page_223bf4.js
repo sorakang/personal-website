@@ -12,6 +12,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$packages$2f$components$2f$TitleContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/apps/frontend/packages/components/TitleContext.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
@@ -26,16 +27,19 @@ function Home() {
             setTitle('');
         }
     }["Home.useEffect"], []);
-    const [message, setMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Home.useEffect": ()=>{
-            fetch("http://localhost:8000").then({
+            fetch(`${("TURBOPACK compile-time value", "https://personal-website-8bsj.onrender.com")}/`).then({
                 "Home.useEffect": (res)=>res.json()
             }["Home.useEffect"]).then({
-                "Home.useEffect": (data)=>setMessage(data.message)
+                "Home.useEffect": (data)=>setData(data)
+            }["Home.useEffect"]).catch({
+                "Home.useEffect": (err)=>console.error("Error fetching data:", err)
             }["Home.useEffect"]);
         }
     }["Home.useEffect"], []);
+    console.log('data', data);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -49,7 +53,7 @@ function Home() {
                         height: 30
                     }, void 0, false, {
                         fileName: "[project]/apps/frontend/main/app/page.js",
-                        lineNumber: 20,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -57,40 +61,40 @@ function Home() {
                         children: "Under Construction"
                     }, void 0, false, {
                         fileName: "[project]/apps/frontend/main/app/page.js",
-                        lineNumber: 27,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/apps/frontend/main/app/page.js",
-                lineNumber: 19,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: "Please come back soon!"
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/main/app/page.js",
-                lineNumber: 29,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
                     "API Message: ",
-                    message
+                    JSON.stringify(data)
                 ]
             }, void 0, true, {
                 fileName: "[project]/apps/frontend/main/app/page.js",
-                lineNumber: 30,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/apps/frontend/main/app/page.js",
-        lineNumber: 18,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
-_s(Home, "45y65id3ZMvrZytnzRbYa0I68oc=", false, function() {
+_s(Home, "uUgsysSt9Cgbth/NTiU/VcQQwoQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$packages$2f$components$2f$TitleContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTitle"]
     ];
